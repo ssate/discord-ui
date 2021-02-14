@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style/dist.css">
 </head>
 <body>
-    <div class="flex flex-row">
-        <div class="flex flex-col flex-none h-screen w-20 bg-gray-800 p-3">
+    <div class="flex flex-row text-sm text-gray-100">
+        <div class="flex flex-col flex-none h-screen bg-gray-900 p-3">
             <div class="overflow-y-auto">
                 <ul class="text-center space-y-2">
                     <li>
@@ -57,40 +57,95 @@
             </div>
         </div>
         <div class="flex flex-col justify-between flex-none h-screen w-60 bg-green-200">
-            <div class="h-12 flex flex-none bg-green-300">
-                
+            <a href="#">
+                <div class="h-12 flex flex-row items-center justify-between flex-none bg-gray-700 border-b border-gray-800 p-4 font-semibold hover:bg-gray-600">
+                    <div>Discord UI</div>
+                    <div>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </div>
+                </div>
+            </a>
+            <div class="flex flex-1 overflow-y-auto bg-gray-700 px-1 py-3 text-gray-400 font-semibold">
+                <ul class="flex flex-col flex-1">
+                    <a href="#" class="hover:text-gray-300">
+                        <li class="flex flex-row items-center">
+                            <svg class="w-3 h-3 mr-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            TEXT CHANNELS
+                        </li>
+                    </a>
+                    <ul class="p-1 flex flex-col gap-0.5 mb-4">
+                        <a href="#" class="bg-gray-600 rounded p-1">
+                            <li class="flex flex-row items-center">
+                                <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+                                <span class="text-gray-100">text channel 1</span>
+                            </li>
+                        </a>
+                        <a href="#" class="hover:bg-gray-600 hover:text-gray-300 rounded p-1">
+                            <li class="flex flex-row items-center">
+                                <svg class="w-5 h-5 mr-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+                                <span class="">text channel 2</span>
+                            </li>
+                        </a>
+                    </ul>
+                    <a href="#" class="hover:text-gray-300">
+                        <li class="flex flex-row items-center">
+                            <svg class="w-3 h-3 mr-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            VOICE CHANNELS
+                        </li>
+                    </a>
+                    <ul class="p-1 flex flex-col gap-0.5 mb-4">
+                        <a href="#" class="hover:bg-gray-600 hover:text-gray-300 rounded p-1">
+                            <li class="flex flex-row items-center">
+                                <svg class="w-5 h-5 mr-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                                <span class="">voice channel 1</span>
+                            </li>
+                        </a>
+                        <ul class="flex flex-col gap-0.5 ml-6">
+                            <a href="#" class="hover:bg-gray-600 hover:text-gray-300 font-normal rounded px-2 py-1 mb-1">
+                                <li class="flex flex-row items-center">
+                                    <img src="assets/images/user.jpeg" alt="user" class="w-6 h-6 mr-2 rounded-full">
+                                    sate
+                                </li>
+                            </a>
+                        </ul>
+                        <a href="#" class="hover:bg-gray-600 hover:text-gray-300 rounded p-1">
+                            <li class="flex flex-row items-center">
+                                <svg class="w-5 h-5 mr-1 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                                <span class="">voice channel 2</span>
+                            </li>
+                        </a>
+                    </ul>
+                </ul>
             </div>
-            <div class="overflow-y-auto bg-green-400">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ac lorem et luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In pharetra sem at ipsum placerat venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas enim lorem, imperdiet nec justo ut, interdum hendrerit felis. Suspendisse eu cursus risus. Phasellus in ex congue, placerat metus sit amet, imperdiet lectus. Proin ullamcorper lacinia erat molestie venenatis. Maecenas lobortis, libero nec vestibulum feugiat, orci dui ullamcorper orci, sed ultrices tortor nisl nec libero. Nunc hendrerit velit a nibh varius, nec hendrerit velit semper.
-
-                    Ut vel nunc iaculis, accumsan dolor elementum, venenatis lacus. Quisque cursus sapien nibh, vitae pulvinar tellus aliquam sed. Nulla arcu diam, tempus nec massa at, posuere imperdiet ex. Nunc consequat nunc non nibh lacinia ornare. Curabitur imperdiet tincidunt sem sit amet convallis. Suspendisse orci ipsum, dapibus id nulla vitae, ultricies consequat dui. Quisque euismod quam quis orci vestibulum ornare. Pellentesque non vulputate arcu. Vestibulum fermentum velit dui, quis rhoncus turpis efficitur dignissim. Proin in libero id dolor facilisis aliquam. Nam tempus erat placerat mollis ornare. Donec at imperdiet arcu. Nunc ac mi vel diam viverra aliquet ut in erat. Proin rhoncus suscipit dui nec aliquet. Proin dapibus condimentum purus venenatis tincidunt. Nulla orci nisl, aliquam sit amet sapien nec, dictum dapibus enim.
-                    
-                    Etiam euismod lobortis tortor eget bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ante sapien, hendrerit sed consectetur sit amet, eleifend sit amet ex. Integer nec tempus urna. Sed tristique dolor magna, at molestie nisi suscipit id. Praesent dignissim sem id augue pellentesque sollicitudin at id lorem. Aliquam facilisis nibh at arcu finibus, accumsan dictum augue vulputate. Curabitur pretium sed felis a vehicula. Nulla fringilla erat vitae diam maximus, ac venenatis mauris tempus. Curabitur erat ex, sodales quis tincidunt vitae, fringilla in ipsum. Nunc eget pellentesque ex. Duis facilisis lorem scelerisque lacus congue ullamcorper ac vitae ipsum. Quisque molestie erat eu neque iaculis convallis. Sed ex ante, fermentum at ante ac, interdum tempor turpis. Aenean sed tortor purus.
-                    
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec consectetur quam in mi pulvinar commodo. Suspendisse sagittis vel arcu vitae blandit. Phasellus tincidunt, tortor sed vehicula fringilla, nunc augue semper urna, non hendrerit urna augue in neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum, enim nec maximus tempor, arcu dolor rutrum mauris, ac gravida arcu ligula tempus lorem. Integer laoreet ligula in arcu pharetra efficitur. Mauris lobortis nibh quam, a semper urna viverra cursus. Cras vitae sollicitudin ipsum, quis feugiat justo. Sed quis ligula sed eros elementum pharetra. Integer vel purus nec neque blandit ultricies. Curabitur efficitur dolor nunc, posuere pellentesque mauris tempus nec. Cras non nibh vel nisl aliquet aliquet id commodo mauris. Nam faucibus fermentum tortor, id vulputate velit imperdiet ac.
-                    
-                    Quisque pretium tellus a porttitor auctor. Pellentesque elit lectus, dapibus non fermentum id, sodales id eros. Mauris ligula libero, malesuada sit amet interdum nec, tempor tincidunt mi. Pellentesque aliquet venenatis augue. Nam sollicitudin iaculis mattis. Sed sagittis diam at eros tempor malesuada. Donec risus nunc, rhoncus eget justo et, pretium dictum nisi. Integer a nunc eros. Maecenas euismod, ligula ut sodales gravida, leo velit tempor ex, ut congue ligula orci sit amet risus.
-                    
-                    Suspendisse gravida et tellus ut ornare. Duis eleifend eu urna quis aliquam. Suspendisse potenti. Vestibulum id auctor lectus. Aliquam erat volutpat. Proin diam leo, facilisis sed dolor vitae, rutrum cursus ex. Donec auctor dolor ligula, sit amet hendrerit leo volutpat vel. Aenean vel magna eu elit interdum euismod. Quisque et nisl leo. Morbi et magna sit amet ante aliquet ultricies. Duis ex tellus, euismod eget porttitor non, ultricies sed est. Etiam sit amet velit eu nisl commodo aliquam imperdiet non ipsum. Morbi blandit lacinia felis quis tempus. Phasellus vitae pharetra justo, eu tempus ipsum. Mauris ac volutpat lorem. Aenean ante nunc, lobortis sit amet laoreet in, feugiat a lorem.
-                    
-                    Etiam venenatis condimentum euismod. Etiam vitae enim malesuada, accumsan magna sed, fermentum ex. Mauris ante neque, blandit ullamcorper libero nec, mollis venenatis nunc. Morbi eu ipsum lobortis leo vulputate interdum et non ligula. Integer ultrices dui quis mauris euismod vestibulum eget eu leo. Sed sit amet quam est. Vestibulum lorem ipsum, pretium feugiat maximus a, laoreet sit amet mauris. Nulla vel ante hendrerit, finibus lectus ac, tincidunt lorem. Nam consectetur, magna eu tempus bibendum, dui tortor ornare sapien, non ultricies enim tellus ac risus. Vestibulum auctor interdum sapien vel dictum. Sed et risus lectus. Nam nunc enim, dictum vel aliquam et, tristique vitae quam. Vivamus vitae sapien lectus. Curabitur pharetra diam gravida mauris condimentum suscipit. Nullam sollicitudin tristique leo, ut posuere lectus sagittis nec.
-                    
-                    Nam ullamcorper ullamcorper augue sit amet efficitur. Quisque eget ultrices velit. Aenean euismod dui quis est sodales ullamcorper. Ut blandit, velit eu commodo ullamcorper, magna quam consequat leo, vel dictum velit felis quis turpis. Cras elementum erat neque, quis imperdiet lectus sodales eu. Donec luctus viverra eros vel lobortis. Sed ac lacinia elit. Duis malesuada lectus id est rhoncus, a convallis magna euismod. In semper, purus non tristique aliquam, tellus lorem consequat nisi, et tincidunt risus magna et eros. Sed in metus auctor, placerat nulla nec, faucibus arcu. Mauris ut elementum eros, in laoreet turpis. Nulla congue libero eget ligula ultrices pharetra.
-                    
-                    Phasellus at pellentesque elit. Donec fringilla dui sed turpis congue euismod ut eu purus. Nunc id sem in odio semper mattis. Nulla venenatis lobortis urna eget iaculis. Nunc imperdiet porttitor tellus in ultricies. Ut in fringilla purus. Pellentesque ut metus suscipit sapien rhoncus volutpat vitae eget eros. Sed posuere ornare massa, sit amet ultricies mi dictum non. Nam nisi massa, porta sollicitudin dignissim at, dignissim in erat. Suspendisse potenti.
-                    
-                    Nam vulputate ultricies lacus, nec venenatis mauris imperdiet et. Etiam mi quam, molestie ac nunc et, feugiat pharetra magna. Etiam ac elit sodales, feugiat sapien ac, sollicitudin tortor. Pellentesque blandit, augue vel porttitor venenatis, nunc urna malesuada sem, id dictum libero augue et tellus. Sed lorem libero, suscipit vel semper at, scelerisque at lorem. Suspendisse sit amet quam non tortor tincidunt sodales non nec eros. Fusce vel aliquet mauris, a fringilla dolor. Nam pharetra, lacus ac mollis vehicula, nibh nisi finibus ligula, nec tristique felis sem a ipsum. Ut efficitur nec lacus quis congue. Quisque sit amet efficitur elit. Aliquam et porttitor mauris, eu venenatis nunc. Quisque arcu arcu, lobortis ut ultrices sed, facilisis vel nisi. Nulla eu augue eleifend, feugiat eros in, suscipit odio. Cras sagittis odio arcu, eget cursus diam feugiat id. Phasellus malesuada congue libero tristique semper. Donec elementum odio magna, sit amet pharetra purus feugiat sed.
-                    
-                    Curabitur libero sapien, viverra vel sapien auctor, dignissim volutpat mi. Mauris et nisi at neque finibus placerat at ut ipsum. Cras at hendrerit erat. In diam dolor, cursus a tempus ut, auctor sed purus. Praesent maximus aliquam egestas. Curabitur ac dapibus urna. Sed maximus tellus eu odio posuere, ac ultrices nisl tempor. Pellentesque sapien ipsum, eleifend sollicitudin tellus vitae, sodales luctus purus. Proin ac magna tempus, auctor eros et, efficitur mi. Nullam ut massa id turpis fringilla condimentum non eget lorem.
-                    
-                    Integer urna tellus, laoreet ac tristique vel, scelerisque nec arcu. Morbi malesuada vehicula augue, id dignissim dolor. Pellentesque nec ipsum non lorem accumsan maximus at a velit. Donec consectetur faucibus elit, non faucibus ex viverra a. Nulla in auctor ligula. Nullam eros nunc, viverra a felis ac, placerat faucibus ligula. Proin aliquet metus nec consequat interdum.
-                    
-                    Ut non mi sed elit consequat gravida ac vel est. Mauris lectus neque, ornare at feugiat sed, sagittis non tortor. Aenean non enim mauris. Maecenas ipsum nibh, laoreet et quam quis, consectetur semper justo. Sed dignissim mollis ante, sed feugiat nisi viverra ut. Integer dictum ante bibendum orci luctus eleifend. Etiam sed luctus ligula. Donec tristique pellentesque velit, eget lobortis ligula. Duis placerat bibendum nisl, ut ultricies quam semper ut. Etiam tempus, libero eget tempor viverra, mi ipsum dapibus urna, quis rutrum nisl lacus nec mauris. Nam vel diam sit amet metus ornare mollis. Cras eget suscipit eros. Aliquam at odio nec lorem eleifend bibendum sed pretium nisi. Curabitur nec ex rhoncus, sagittis justo sit amet, imperdiet turpis. In sit amet eros cursus, eleifend nisl tristique, porttitor magna. Phasellus sit amet lectus tellus.</p>
-            </div>
-            <div class="h-12 flex flex-none bg-green-300">
-                aa
+            <div class="h-12 flex flex-row flex-none bg-gray-800 p-2">
+                <a href="#" class="hover:opacity-70 rounded-full mr-1.5 flex flex-row items-end">
+                    <img src="assets/images/user.jpeg" alt="user" class="rounded-full w-8 h-8">
+                    <div class="h-3.5 w-3.5 bg-green-400 -ml-3 -mb-0.5 rounded-full border-2 border-gray-800"></div>
+                </a>
+                <a href="#" class="flex flex-col gap-0 leading-none justify-center mt-0.5">
+                    <div class="font-semibold">sate</div>
+                    <div class="text-gray-400 text-xs">#0001</div>
+                </a>
+                <ul class="flex flex-row flex-1 justify-end items-center gap-y-1.5 text-gray-300">
+                    <a href="#" class="p-1.5 rounded hover:bg-gray-600">
+                        <li>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                        </li>
+                    </a>
+                    <a href="#" class="p-1.5 rounded hover:bg-gray-600">
+                        <li>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                        </li>
+                    </a>
+                    <a href="#" class="p-1.5 rounded hover:bg-gray-600">
+                        <li>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </li>
+                    </a>
+                </ul>
             </div>
         </div>
+
         <div class="flex flex-col flex-1 h-screen w-60 bg-blue-200">
             <div class="h-12 flex flex-none bg-blue-300">
                 
