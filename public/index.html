@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord UI</title>
     <link rel="stylesheet" href="style/dist.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="flex flex-row text-sm text-gray-100">
@@ -163,7 +164,7 @@
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                         </li>
                     </a>
-                    <a href="#" class="text-gray-100">
+                    <a href="#" onclick="toggleFriends()" class="text-gray-100" id="friends-toggle">
                         <li>
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                         </li>
@@ -227,7 +228,7 @@
                         a
                     </div>
                 </div>
-                <div class="flex w-60 bg-red-600 overflow-y-auto">
+                <div class="flex w-60 bg-red-600 overflow-y-auto" id="friends">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id fermentum velit. Integer varius est ut scelerisque congue. In hac habitasse platea dictumst. Curabitur quis tellus ac elit elementum bibendum vel sed magna. Cras elit augue, tincidunt sit amet dictum quis, interdum eget mauris. Nulla sed eleifend urna. Quisque vitae enim dapibus, euismod dui vitae, facilisis lacus. In tincidunt blandit ultricies. Etiam facilisis, justo sed auctor eleifend, lorem nisi accumsan dui, quis sodales dui turpis varius dui. Donec mollis tempor hendrerit. Cras elementum in mauris et iaculis. Phasellus tempus enim nec velit elementum laoreet. Vivamus vel elit ac tortor consequat semper eget non lorem. Suspendisse egestas congue laoreet. Morbi ac egestas purus, in luctus odio.
 
                         Aliquam scelerisque nisl quam, in hendrerit augue tincidunt congue. Curabitur hendrerit odio in ante tempus sagittis. Aliquam rutrum mauris non sapien vestibulum, non lobortis mi consectetur. Nunc id consequat mi, vel dapibus enim. Cras rutrum urna ante, in egestas massa pharetra sed. Curabitur sed lacus lorem. Cras non eros eu mauris egestas porta. Fusce luctus molestie finibus. Nunc eleifend velit convallis vehicula dapibus. Duis suscipit tortor magna, quis facilisis augue rhoncus at. Nulla dapibus pellentesque rutrum. Sed lacinia at risus non efficitur.
@@ -292,5 +293,12 @@
             </div> -->
         </div>
     </div>
+
+    <script>
+        function toggleFriends() {
+            $('#friends-toggle').toggleClass('text-gray-100');
+            $('#friends').toggle();
+        }
+    </script>
 </body>
 </html>
