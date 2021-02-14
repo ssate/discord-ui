@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="flex flex-row text-sm text-gray-100">
-        <div class="flex flex-col flex-none h-screen bg-gray-900 p-3">
+        <div class="flex flex-col flex-none h-screen bg-gray-900 px-3">
             <div class="overflow-y-auto">
-                <ul class="text-center space-y-2">
+                <ul class="text-center space-y-2 my-3">
                     <li>
                         <a href="#">
                             <div class="flex items-center justify-center h-12 w-12 rounded-full mx-auto text-gray-200 bg-gray-700 hover:bg-blue-300 hover:rounded-2xl">
@@ -19,7 +19,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="border-b-2 border-gray-700 mx-3"></li>
+                    <li class="border-b-2 border-gray-700 mx-2"></li>
                     <li>
                         <a href="#">
                             <img src="https://data.whicdn.com/images/339756732/original.jpg" class="w-12 h-12 mx-auto rounded-2xl">
@@ -47,7 +47,7 @@
                             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         </div>
                     </li>
-                    <li class="border-b-2 border-gray-700 mx-3"></li>
+                    <li class="border-b-2 border-gray-700 mx-2"></li>
                     <li>
                         <div class="flex items-center justify-center h-12 w-12 rounded-full mx-auto bg-gray-700 text-green-400 hover:bg-green-400 hover:text-gray-200 hover:rounded-2xl">
                             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
@@ -56,7 +56,7 @@
                 </ul>
             </div>
         </div>
-        <div class="flex flex-col justify-between flex-none h-screen w-60 bg-green-200">
+        <div class="flex flex-col justify-between flex-none h-screen w-60">
             <a href="#">
                 <div class="h-12 flex flex-row items-center justify-between flex-none bg-gray-700 border-b border-gray-800 p-4 font-semibold hover:bg-gray-600">
                     <div>Discord UI</div>
@@ -146,11 +146,47 @@
             </div>
         </div>
 
-        <div class="flex flex-col flex-1 h-screen w-60 bg-blue-200">
-            <div class="h-12 flex flex-none bg-blue-300">
-                
+        <div class="flex flex-col flex-1 h-screen w-60">
+            <div class="h-12 flex flex-row flex-none justify-between bg-gray-600 border-b border-gray-700 items-center p-4">
+                <div class="flex flex-row items-center gap-1.5 font-semibold overflow-x-hidden break-all">
+                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+                    text channel 1
+                </div>
+                <ul class="flex flex-row gap-3 text-gray-300">
+                    <a href="#" class="hover:text-gray-200">
+                        <li>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                        </li>
+                    </a>
+                    <a href="#" class="hover:text-gray-200">
+                        <li>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </li>
+                    </a>
+                    <a href="#" class="text-gray-100">
+                        <li>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                        </li>
+                    </a>
+                    <li class="flex flex-row items-center">
+                        <input type="text" class="h-6 outline-none bg-gray-800 rounded px-2 focus:w-60" placeholder="Search">
+                        <div class="-ml-6 bg-gray-800 z-10 p-1 rounded-r">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                    </li>
+                    <a href="#" class="hover:text-gray-200">
+                        <li>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path></svg>
+                        </li>
+                    </a>
+                    <a href="#" class="hover:text-gray-200">
+                        <li>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </li>
+                    </a>
+                </ul>
             </div>
-            <div class="overflow-y-auto bg-blue-400">
+            <div class="overflow-y-auto bg-red-400">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ac lorem et luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In pharetra sem at ipsum placerat venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas enim lorem, imperdiet nec justo ut, interdum hendrerit felis. Suspendisse eu cursus risus. Phasellus in ex congue, placerat metus sit amet, imperdiet lectus. Proin ullamcorper lacinia erat molestie venenatis. Maecenas lobortis, libero nec vestibulum feugiat, orci dui ullamcorper orci, sed ultrices tortor nisl nec libero. Nunc hendrerit velit a nibh varius, nec hendrerit velit semper.
 
                     Ut vel nunc iaculis, accumsan dolor elementum, venenatis lacus. Quisque cursus sapien nibh, vitae pulvinar tellus aliquam sed. Nulla arcu diam, tempus nec massa at, posuere imperdiet ex. Nunc consequat nunc non nibh lacinia ornare. Curabitur imperdiet tincidunt sem sit amet convallis. Suspendisse orci ipsum, dapibus id nulla vitae, ultricies consequat dui. Quisque euismod quam quis orci vestibulum ornare. Pellentesque non vulputate arcu. Vestibulum fermentum velit dui, quis rhoncus turpis efficitur dignissim. Proin in libero id dolor facilisis aliquam. Nam tempus erat placerat mollis ornare. Donec at imperdiet arcu. Nunc ac mi vel diam viverra aliquet ut in erat. Proin rhoncus suscipit dui nec aliquet. Proin dapibus condimentum purus venenatis tincidunt. Nulla orci nisl, aliquam sit amet sapien nec, dictum dapibus enim.
